@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;   /* Căn giữa ngang */
+  align-items: center;       /* Căn giữa dọc */
+  background: #fff0f5;
+}
+
+.container {
+  text-align: center;
+}
+
+.gift-box {
+  font-size: 150px;  /* Hộp quà to hơn */
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin-top: 20px;
+}
+
+.gift-box:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.surprise {
+  display: none;  /* Ẩn cho tới khi mở quà */
+  margin-top: 30px;
+}
+
+.surprise img {
+  width: 200px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.player button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ff69b4;
+  color: white;
+  transition: 0.3s;
+}
+
+.player button:hover {
+  background: #ff1493;
+}
+
+#trackName {
+  margin-top: 10px;
+  font-weight: bold;
+}
