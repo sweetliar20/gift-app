@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tặng em Như</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            /* Thiết lập hình nền GIF */
+            background-image: url('enhu.gif'); 
+            background-size: cover; /* Phủ kín màn hình */
+            background-position: center; /* Căn giữa ảnh */
+            background-repeat: no-repeat;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        /* Lớp phủ mờ để chữ dễ đọc hơn nếu GIF quá sáng */
+        .overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.2); /* Làm tối nền 20% */
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2; /* Đẩy nội dung lên trên lớp phủ */
+        }
+
+        h1 {
+            color: white;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 4px 8px rgba(0,0,0,0.5);
+        }
+
+        .player-container {
+            background: rgba(255, 255, 255, 0.8); /* Nền trắng trong suốt */
+            padding: 15px;
+            border-radius: 50px;
+            backdrop-filter: blur(5px); /* Làm mờ nhẹ phía sau trình phát */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+
+        audio {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="content">
+        <h1>Em đẹp lắm ❤️</h1>
+
+        <div class="player-container">
+            <audio controls>
+                <source src="honvaodaydi.mp3" type="audio/mpeg">
+                Trình duyệt của bạn không hỗ trợ phát nhạc.
+            </audio>
+        </div>
+    </div>
+
+</body>
+</html>
